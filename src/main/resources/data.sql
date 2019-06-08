@@ -7,6 +7,7 @@ CREATE TABLE DBConnectionDetails (
 	 port varchar(5),
 	 databaseName varchar(40),
 	 username varchar(40),
-	 password varchar(40)
+	 password varchar(40),
+	 schema varchar(40)
 );
- 
+

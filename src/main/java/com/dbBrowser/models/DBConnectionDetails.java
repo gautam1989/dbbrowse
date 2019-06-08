@@ -21,6 +21,14 @@ public class DBConnectionDetails {
 	String databaseName;
 	String username;
 	String password;
+	String schema;
+	
+	public String getSchema() {
+		return schema;
+	}
+	public void setSchema(String schema) {
+		this.schema = schema;
+	}
 	public String getName() {
 		return name;
 	}
@@ -58,7 +66,7 @@ public class DBConnectionDetails {
 		this.password = password;
 	}
 	public DBConnectionDetails(String name, String hostname, String port, String databaseName, String username,
-			String password) {
+			String password,String schema) {
 		super();
 		this.name = name;
 		this.hostname = hostname;
@@ -66,6 +74,7 @@ public class DBConnectionDetails {
 		this.databaseName = databaseName;
 		this.username = username;
 		this.password = password;
+		this.schema = schema;
 	}
 	public DBConnectionDetails() {
 		super();
